@@ -4,7 +4,7 @@ Fonte: Gaulier, G. and Zignago, S. (2010) BACI: International Trade Database at 
 
 Il dataset BACI, suddiviso su più file relativi a un particolare anno, riporta, per ogni anno, il valore in migliaia di USD (ma anche in kg) dei beni, a livello disaggregato, scambiati tra i paesi che compongono il dataset. Il periodo considerato va dal 1996 al 2022. 
 
-Il codice contenuto in "baci.ipynb" crea un output con le seguenti variabili: 
+Il codice contenuto in "baci.pdf" crea un output con le seguenti variabili: 
 - origin: paese esportatore espresso in ISO3c
 - destination: paese importatore espresso ISO3c
 - year: anno in cui viene registrato lo scambio commerciale
@@ -16,7 +16,7 @@ Fonte: UN COMTRADE Database
 
 Il dataset COMTRADE riporta, per ogni anno, il valore in USD dei beni, a livello aggregato, scambiati tra i paesi che compongono il dataset. Il periodo considerato va dal 1997 al 2020. Vengono riportati i paesi con diversi codici identificativi e anche la media dei valori in USD dei beni ogni 5 anni.
 
-Il codice contenuto in "comtrade.ipynb" crea un output con le seguenti variabili:
+Il codice contenuto in "comtrade.pdf" crea un output con le seguenti variabili:
 - origin: paese esportatore espresso in ISO3c
 - destination: paese importatore espresso in ISO3c
 - year: anno in cui viene registrato lo scambio commerciale
@@ -28,7 +28,7 @@ Fonte: USICT DataWeb
 
 Il dataset COMTRADE, suddiviso su più file relativi a un particolare anno, riporta, per ogni anno, il valore in milioni di USD dei servizi scambiati tra i paesi che compongono il dataset, in diversi tipi di industrie. Il periodo considerato va dal 2000 al 2020. Vengono riportati i paesi con il nome completo e con i codici identificativi ISO3c (e poi flag_mirror e flag_zero?). 
 
-Il codice contenuto in "usict.ipynb" crea un output con le seguenti variabili:
+Il codice contenuto in "usict.pdf" crea un output con le seguenti variabili:
 - origin: paese esportatore espresso in ISO3c
 - destination: paese importatore espresso in ISO3c
 - year: anno in cui viene registrato lo scambio dei servizi
@@ -40,7 +40,7 @@ Fonte: International Monetary Fund - Coordinated Portfolio Investment Survey (CP
 
 Il dataset CPIS riporta, per ogni anno, il valore in USD degli scambi finanziari, tra i paesi che compongono il dataset, espressi come crediti dei paese esportatore nei confronti del paese importatore. Il periodo considerato va dal 2001 al 2020. Vengono riportati i paesi con il nome completo e con il codice identificativo ISO3n e viene riportata anche la media dei crediti ogni 5 anni.
 
-Il codice contenuto in "cpis.ipynb" crea un output con le seguenti variabili:
+Il codice contenuto in "cpis.pdf" crea un output con le seguenti variabili:
 - origin: paese creditore espresso in ISO3c
 - destination: paese debitore espresso in ISO3c
 - year: anno in cui viene registrato lo scambio finanziario
@@ -54,7 +54,7 @@ Fonte: BIS Data Portal
 
 Il dataset BIS riporta, per ogni anno, su base quadrimestrale, il valore in milioni di USD del credito e del debito di ogni tipo (debt securities long and short term, loans and deposits), in ogni tipo di valuta maggiormente utilizzata, scambiato tra singoli paesi, tra gruppi di paesi, tra istituzioni all'interno di un singolo paese, tra organizzazioni internazionali. Il periodo considerato va dal 1997 al 2020. Vengono riportati i paesi con il codice identificativo ISO2c.
 
-Il codice contenuto in "bis.ipynb" crea due output. Il primo ("bis.csv") è composto dalle seguenti variabili:
+Il codice contenuto in "bis.pdf" crea due output. Il primo ("bis.csv") è composto dalle seguenti variabili:
 - origin: paese dichiarante lo scambio, espresso in ISO3c
 - destination: paese dichiarato nello scambio, espresso in ISO3c
 - year: anno in cui viene dichiarato lo scambio finanziario
@@ -76,7 +76,7 @@ Fonte: Dueñas, M., Mastrandrea, R., Barigozzi, M. et al. Spatio-Temporal Patt
 
 Il dataset THOMSON REUTERS, suddiviso su più file relativi a un particolare anno, è costituito, per ogni anno, da matrici le cui righe rappresentano i direct investor (DI) residienti in un paese e le cui colonne rappresentano le imprese di diretto investimento (DIENT) residienti in un altro paese. Altri due file riportano la lista dei paesi e degli anni presi in considerazione. Il periodo considerato va dal 1995 al 2020.
 
-Il codice contenuto in "ts.ipynb" crea un output con le seguenti variabili:
+Il codice contenuto in "ts.pdf" crea un output con le seguenti variabili:
 - origin: paese dove risiede l'investitore diretto espresso in ISO3c
 - destination: paese dove risiede l'impresa di investimento diretto espresso in ISO3c
 - year: anno in cui viene dichiarato il flusso di investimento
@@ -88,7 +88,7 @@ Fonte: International Monetary Fund - Coordinated Direct Investment Survey (CDIS)
 
 Il dataset CDIS riporta, per ogni anno, diverse variabili associate all'investimento diretto proveniente dall'investitore diretto (DI) residiente in un certo paese e indirzzato all'impresa di diretto investimento che il DI possiede almeno per il 10%, residiente in un altro paese (DIENT). Più nello specifico tali variabili riportano il valore degli strumenti del debito sia lordi che netti, sia intesi come debiti (*liabilities*) sia come crediti (*asset*), sia nei confronti di un'impresa di invesitmento diretto sia nei confronti di un'impresa "amica" (*fellow enterprise*), di cui non si possiede il 10% del potere di voto; di ognuna di queste variabili c'è il valore *derived* ossia il corrispettivo valore del flusso dell'investimento ottenuto considerando ciò che dichiara il paese partner nello scambio. Ho ritenuto opportuno mantenere, oltre alle colonne che riportano l'ISO3c dei paesi creditori e debitori e l'anno in cui viene registrato lo scambio, solo le colonne riportanti il valore degli investimenti diretti totali, escludendo i debiti/crediti con le *fellow enterprises*, differenziati per direzionalità, ossia considerando caso *outward* e  quello *inward*, ottenuti dalla somma tra ogni tipo di strumento di debito (asset-liabilities nel caso outward, e liabilities-asset nel caso inward) e il netto dell'equity. E' il dato che più si avvicina anche ai dati del dataset UNCTAD. Il periodo considerato va dal 2009 al 2020.
 
-Il codice contenuto in "cdis.ipynb" crea un output con le seguenti 
+Il codice contenuto in "cdis.pdf" crea un output con le seguenti 
 - origin: paese dove risiede l'investitore diretto (DI) espresso in ISO3c
 - destination: paese dove risiede l'impresa di investimento diretto (DIENT) espresso in ISO3c
 - year: anno in cui viene dichiarato il flusso di investimento
@@ -101,7 +101,7 @@ Fonte: UNCTAD Stat
 
 Il dataset UNCTAD è composti da tre file: i primi due, molto simili, riportano, per ogni anno, il valore del flusso di investimento diretto (sia dal punto di vista *outward* che *inward*) proveniente da un investitore diretto residente in un certo paese e indirizzato a un'impresa di investimento diretto residente in un altro paese. Tra i due dataset relativi al flusso si è deciso di lavorare con quello che presentava il maggior numero di dati. Il terzo file riporta, per ogni anno, il valore accumulato, alla fine del periodo di osservazione, dell'investimento diretto (*stock*) da DI a DIENT (sia *inward* che *outward*). Il periodo considerato va dal 1990 al 2020. 
 
-Il codice contenuto in "fdi_unctad.ipynb" crea quattro output. I primi due sono relativi al flusso di investimento.
+Il codice contenuto in "fdi_unctad.pdf" crea quattro output. I primi due sono relativi al flusso di investimento.
 Il primo output ("flow_unctad.csv") è composto dalle seguenti variabili:
 - origin: paese dichiarante il flusso di investimento diretto, espresso in ISO3c
 - destination: paese dichiarato partner nel flusso di investimento diretto, espresso in ISO3c
@@ -113,8 +113,8 @@ Il secondo output ("flow_confronto.csv") contiene le seguenti variabili:
 - origin: paese dove risiede l'investitore diretto (DI) espresso in ISO3c
 - destination: paese dove risiede l'impresa di investimento diretto (DIENT) espresso in ISO3c
 - year: anno in cui viene dichiarato il flusso di investimento diretto
-- outward_cdis: valore del flusso di investimento diretto in milioni di USD dichiarato da DI
-- outward_derived_cdis: valore del flusso di investimento diretto in milioni di USD dichiarato da DIENT
+- outward_flow_cdis: valore del flusso di investimento diretto in milioni di USD dichiarato da DI
+- outward_flow_derived_cdis: valore del flusso di investimento diretto in milioni di USD dichiarato da DIENT
 
 Gli altri due ouput sono relativi al valore accumulato dell'investimento (*stock*). 
 Il terzo output ("stock_unctad.csv") è composto dalle seguenti variabili:
@@ -128,8 +128,8 @@ Il secondo output ("stock_confronto.csv") contiene le seguenti variabili:
 - origin: paese dove risiede l'investitore diretto (DI) espresso in ISO3c
 - destination: paese dove risiede l'impresa di investimento diretto (DIENT) espresso in ISO3c
 - year: anno in cui viene dichiarato lo stock di investimento diretto
-- outward_cdis: valore dello stock di investimento diretto in milioni di USD dichiarato da DI
-- outward_derived_cdis: valore dello stock di investimento diretto in milioni di USD dichiarato da DIENT
+- outward_stock_unctad: valore dello stock di investimento diretto in milioni di USD dichiarato da DI
+- outward_stock_derived_unctad: valore dello stock di investimento diretto in milioni di USD dichiarato da DIENT
 
 # UNWTO
 
@@ -183,7 +183,7 @@ Il codice contenuto in "mpi.ipynb" crea un output con le seguenti variabili:
 - origin: paese di provenienza della persona altamente qualificata in ISO3c 
 - destination: paese di arrivo della persona altamente qualificata in ISO3c 
 - year: anno in cui viene registrata la migrazione
-- patents: numero delle migrazioni di persone altamente qualificate avvenute basate sull'osservazioni dei dati bibliometrici di Scopus
+- n_migrations: numero delle migrazioni di persone altamente qualificate avvenute basate sull'osservazioni dei dati bibliometrici di Scopus
 
 
 
